@@ -11,30 +11,44 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S.E. in Electrical Engineering, University of Michigan, 2023
 
-Work experience
+Professional Experiences
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Spartan Radar
+  * Systems Engineering & Integration
+    * Full-Time Internship, Jun-Aug 2021
+  * Software Engineering
+    * Full-Time Internship, May-Aug 2022
+    * Part-Time Co-Op, Sept 2022 - May 2023
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Subaru R&D
+  * Electrical Engineering Student Researcher
+    * Part-Time Co-Op Jan-Dec 2022
+
+Research Experiences
+======
+* Optimal Design Lab, EECS, UM
+  * Research Assistant, Sep 2019 - Mar 2020
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Software
+  * Python
+    * PyTorch
+    * TensorFlow
+    * Pandas
+  * MATLAB 
+    * Simulink
+  * C/C++
+  * LTSpice
+  * SolidWorks
+  * GIT
+  * Eagle
+* Languages
+  * Greek
+  * English
+  * French
 
 Publications
 ======
@@ -42,18 +56,18 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
