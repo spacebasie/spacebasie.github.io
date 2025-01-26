@@ -11,6 +11,7 @@ redirect_from:
 
 Education
 ======
+* Prospective MSc in Communications & Signal Processing, 2025
 * B.S.E. in Electrical Engineering, University of Michigan, 2023
 
 Professional Experiences
@@ -46,9 +47,7 @@ Skills
   * GIT
   * Eagle
 * Languages
-  * Greek
-  * English
-  * French
+  * Greek, English, French
 
 Publications
 ======
