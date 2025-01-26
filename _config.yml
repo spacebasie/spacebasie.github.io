@@ -84,10 +84,11 @@ author:
   avatar           : "prof_site.jpeg" # ADD PROFILE PICTURE
   bio              : "Imperial College London Communications & Signal Processing MSc"
   location         : "London, UK"
-  employer         :
+  employer         : 
   pubmed           : 
   googlescholar    : #"http://yourfullgooglescholarurl.com" NOT YET
   email            :  "stef.frilingos@gmail.com"
+  my_lab           :  "https://www.imperial.ac.uk/communications-and-signal-processing/"
   researchgate     :  "https://www.researchgate.net/profile/Stefanos-Frilingos"
   uri              :
   bitbucket        :
