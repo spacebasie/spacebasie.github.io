@@ -3,17 +3,17 @@ main:
   - title: "Publications"
     url: /publications/
 
-   - title: "Professional Experience"
-     url: /experience/
+  - title: "Professional Experience"
+    url: /experience/
     
   - title: "Research"
     url: /research/
         
-   - title: "Project Portfolio"
-     url: /portfolio/
+  - title: "Project Portfolio"
+    url: /portfolio/
     
   - title: "Hobbies"
     url: /hobbies/
     
-   - title: "Photography"
-     url: /photography/
+  - title: "Photography"
+    url: /photography/

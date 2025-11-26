@@ -25,3 +25,6 @@ author_profile: true
 
 * Co-authored a review paper on funding for design and innovation of sustainable development in Africa, published at the Design 2020 conference.
 * Updated the lab's website and digitized 200+ academic documents to the electronic archive database.
+
+**Related Publication:**
+* [Funding Design and Innovation for Sustainable Development in Africa](/publication/ODE_paper_2020)
