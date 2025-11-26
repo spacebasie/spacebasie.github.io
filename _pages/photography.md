@@ -20,6 +20,6 @@ gallery:
 
 {% include base_path %}
 
-Enjoy a selection things I have seen.
+Enjoy a selection of things I have seen.
 
 {% include gallery caption="Stefanos Photographs" %}
