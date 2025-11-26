@@ -1,6 +1,6 @@
 ---
 title: "Music"
-excerpt: "Clicos Modernos is the greatest new wave album."
+excerpt: "Clics Modernos is the greatest new wave album."
 collection: hobbies
 header:
   teaser: mojofm.png

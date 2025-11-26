@@ -21,6 +21,11 @@ author_profile: true
 * Engineered a computer vision algorithm for real-time lane boundary identification from a video feed and optimized a motor controls system with robust adaptive cruise control capability at speeds up to 15cm/s.
 * Developed an image-processing algorithm which identified stopping patterns and debugged edge cases to reduce false stops to none.
 
+<video width="100%" controls>
+  <source src="/files/robot_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Wildfire Forecasting with MDST
 **Jan. 2023 – Apr. 2023**
 
@@ -32,12 +37,14 @@ author_profile: true
 
 * Modeled subsurface soil organic carbon by correlating topographic and vegetation data through ML methods.
 * Performed extensive feature engineering on remote sensing data to boost the predictive accuracy of the top-performing model by 28%.
+* [Read my report here](/files/soc_model.pdf)
 
 ## Audio Engineering Project
 **Jan. 2022 – Apr. 2022**
 
 * Created a music teaching assistant with Python, incorporating DSP algorithms to evaluate student practice recordings against an ideal song.
 * Conducted frequency domain analysis to score musical performances, analyzing pitch, tempo and timbre; providing feedback on user performance.
+* [Click to learn more](https://midirate351.wixsite.com/eecs351f22)
 
 ## UM Solar Car Team
 **Jan. 2021 – Jan. 2022**
