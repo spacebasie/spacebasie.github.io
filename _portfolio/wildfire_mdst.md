@@ -2,7 +2,7 @@
 title: "Wildfire Forecasting with MDST"
 excerpt: "Developed deep learning models (ResNet, U-Net) to predict spatio-temporal wildfire spread with 87% accuracy."
 collection: portfolio
-date: 2023-01-01
+date: 2023-01-02
 ---
 
 **Jan. 2023 – Apr. 2023**
