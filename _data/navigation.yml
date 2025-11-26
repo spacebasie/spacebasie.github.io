@@ -3,11 +3,11 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Professional Experience"
-    url: /experience/
-    
   - title: "Research"
     url: /research/
+
+  - title: "Professional Experience"
+    url: /experience/
         
   - title: "Project Portfolio"
     url: /portfolio/
