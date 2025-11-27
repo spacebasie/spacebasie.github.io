@@ -10,7 +10,7 @@ redirect_from:
 
 Welcome to my world wide web page of wizardly crafts.
 
-I just graduated with an MSc in Communications & Signal Processing from Imperial, where my research thesis focused on **representation learning for multi-agent system optimization** in the CSP lab.
+I just graduated with an MSc in Communications & Signal Processing from Imperial, where my [research thesis](/research/) focused on **representation learning and distributed optimization for multi-agent systems** in the CSP lab.
 
 ## My Mission
 My passion lies at the intersection of **computational science, Earth observation, and efficient digital agriculture**. I wish to hone my engineering skill-set to contribute in bridging the gap between software and hardware systems for enhancing environmentally conscious decision-making.
