@@ -7,3 +7,5 @@ header:
 ---
 
 The sunshine bores the daylight out of me.
+
+Under construction... Soon links to some jam recordings and pictures of MojoFM.
