@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Stefanos A Frilingos"
-  avatar           : "prof_site.jpeg" # ADD PROFILE PICTURE
+  avatar           : "prof2.jpg" # ADD PROFILE PICTURE
   bio              : "Imperial College London Communications & Signal Processing MSc"
   location         : "London, UK"
   employer         : 
@@ -103,7 +103,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "linkedin.com/in/fri-stef/"
+  linkedin         : "fri-stef"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
