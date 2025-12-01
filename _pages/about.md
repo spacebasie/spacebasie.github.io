@@ -27,6 +27,6 @@ I am currently seeking full-time opportunities in **machine learning, computer v
 * Environmental monitoring
 * Geospatial analysis
 * Digital agriculture
-* Autonomous robotics (cars, *not* defense)
+* Autonomous robotics (cars/transportation)
 
  >"War is over, if you want it."
