@@ -7,6 +7,13 @@ author_profile: true
 
 {% include base_path %}
 
+## Exploring Digital Image Processing Methods
+**Oct. 2024**
+
+* Analyzed fundamental image processing techniques, comparing spectral transforms and implementing spatial enhancement methods for improved contrast and feature extraction
+* Designed robust compression and restoration algorithms, optimizing DCT quantization and filtering parameters to recover signal fidelity from simulated noise and blur
+* [Read my report here](/files/TS_Lab_Report_SAF.pdf)
+
 ## Geospatial Coverage Optimization in the Aegean Sea
 **Jan. 2024 – Feb. 2024**
 
