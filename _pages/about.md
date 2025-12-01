@@ -29,4 +29,5 @@ I am currently seeking full-time opportunities in **machine learning, computer v
 * Digital agriculture
 * Autonomous robotics (cars/transportation)
 
- >"War is over, if you want it."
+
+War is over, if you want it.
