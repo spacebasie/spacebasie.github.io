@@ -7,6 +7,13 @@ author_profile: true
 
 {% include base_path %}
 
+## An Investigation of a Novel Federated Learning Algorithm
+**Mar. 2025**
+
+* Investigated the Model-Contrastive Federated Learning (MOON) framework, implementing model-level contrastive objectives to mitigate representation drift across heterogeneous CIFAR-10 data distributions
+* Conducted a comparative performance analysis against FedAvg, FedProx, and SCAFFOLD, identifying critical hyperparameter sensitivity and training horizon constraints required to optimize the alignment mechanism
+* [Read my report here](/files/MOON_PaperStudy_SAF.pdf) 
+
 ## Exploring Digital Image Processing Methods
 **Oct. 2024**
 
@@ -20,6 +27,7 @@ author_profile: true
 * Developed a Python-based spatial optimization algorithm to maximize sensor coverage of 1,000 fire surveillance towers on Aegean islets.
 * Processed raw satellite imagery from USGS into a binary land/sea matrix map.
 * Created visualizations of tower placement and land/sea coverage, and generated a data-frame with the precise coordinates and range recommendations for each tower.
+* [Read my report here](/files/Aegean_Sea_Optimization_Project.pdf)
 
 ## DSP Lab Senior Design Project (Maze-Solving Robot)
 **Jan. 2023 – Apr. 2023**
