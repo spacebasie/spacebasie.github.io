@@ -51,7 +51,7 @@ author_profile: true
 **Aug. 2022 – Dec. 2022**
 
 * Modeled subsurface soil organic carbon by correlating topographic and vegetation data through ML methods.
-* Performed extensive feature engineering on remote sensing data to boost the predictive accuracy of the top-performing model by 28%.
+* Performed extensive feature engineering on remote sensing data to boost the predictive accuracy of the top-performing model by 36%.
 * [Read my report here](/files/soc_model.pdf)
 
 ## Audio Engineering Project
