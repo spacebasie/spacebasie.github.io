@@ -7,6 +7,15 @@ author_profile: true
 
 {% include base_path %}
 
+## Laelaps AI
+**Computer Vision Intern**
+*Zurich, CH | February 2026 - July 2026*
+
+* Architected the on-edge computer vision stack from the ground up, from design through validation.
+* Developed core perception modules for object detection, tracking, and identification, establishing a rigorous testing framework to ensure robust performance
+* Boosted real-time inference frame rate by 60\% through GPU acceleration (TensorRT) and pipeline optimization
+* Designed the cloud CV pipeline for continuous detection, tracking, re-ID and event logging
+
 ## Spartan Radar
 **Software Engineering Intern**
 *Los Alamitos, CA | May 2022 - May 2023*
