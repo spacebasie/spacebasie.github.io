@@ -1,0 +1,27 @@
+# "Selected projects" cards on the homepage. The full list lives on /portfolio/.
+- title: "Representation learning for collective intelligence"
+  meta: "MSc thesis · 2025"
+  desc: "A communication protocol for self-supervised learning in decentralized multi-agent networks."
+  links:
+    - label: "Thesis"
+      url: /files/SAF_Representation_Learning_for_Collective_Intelligence.pdf
+    - label: "Poster"
+      url: /files/Poster_Thesis_SAF_25.pdf
+
+- title: "Geospatial coverage optimization in the Aegean Sea"
+  meta: "Geospatial · 2024"
+  desc: "Placing 1,000 fire and vessel surveillance towers on Aegean islets using USGS satellite imagery."
+  links:
+    - label: "Report"
+      url: /files/Aegean_Sea_Optimization_Project.pdf
+
+- title: "Wildfire forecasting with MDST"
+  meta: "Deep learning · 2023"
+  desc: "ResNet and U-Net models predicting spatio-temporal wildfire spread with 87% accuracy."
+
+- title: "Maze-solving robot"
+  meta: "Robotics · 2023"
+  desc: "Real-time lane detection and adaptive cruise control, solving mazes over 90% of the time."
+  links:
+    - label: "Demo video"
+      url: /files/robot_demo.mp4

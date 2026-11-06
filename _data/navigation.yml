@@ -1,19 +1,20 @@
-# main links links
+# main links
 main:
-  - title: "Publications"
-    url: /publications/
-
   - title: "Research"
     url: /research/
 
-  - title: "Professional Experience"
+  - title: "Experience"
     url: /experience/
-        
-  - title: "Project Portfolio"
+
+  - title: "Projects"
     url: /portfolio/
-    
-  - title: "Hobbies"
-    url: /hobbies/
-    
+
   - title: "Photography"
     url: /photography/
+
+  - title: "Music"
+    url: /music/
+
+# Not in the menu, but the pages still exist:
+#   /publications/  (the paper is linked from the Research page)
+#   /hobbies/       (lists the hobbies collection; Music now has its own page at /music/)

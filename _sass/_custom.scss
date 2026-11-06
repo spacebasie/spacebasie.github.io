@@ -1,0 +1,263 @@
+/* ==========================================================================
+   CUSTOM: olive & sand look
+   Loaded last in assets/css/main.scss so these rules override the theme.
+   Colours and fonts live in _variables.scss.
+   ========================================================================== */
+
+/* Base
+   ========================================================================== */
+
+body {
+  background-color: $background-color;
+  line-height: 1.7;
+}
+
+::selection {
+  color: $olive-ink;
+  background: mix(#fff, $olive, 70%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $olive-ink;
+  font-weight: 400; // regular weight throughout, headings stand out by size
+}
+
+.page__title {
+  font-size: $type-size-2;
+  line-height: 1.15;
+  margin-bottom: 0.6em;
+}
+
+/* Section headings: thin rule with a short olive accent bar */
+.page__content h2,
+.archive h2 {
+  position: relative;
+  margin-top: 2.2em;
+  padding-bottom: 0.4em;
+  font-size: $type-size-3;
+  border-bottom: 1px solid $border-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 3em;
+    height: 3px;
+    background: $primary-color;
+  }
+}
+
+/* Links: softer underline */
+.page__content a,
+.archive a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+/* Lists: olive bullets, a little tighter */
+.page__content,
+.archive {
+  ul li {
+    margin-bottom: 0.35em;
+  }
+
+  li::marker {
+    color: $primary-color;
+  }
+}
+
+/* Experience / research / projects entries:
+   role on its own line, location and dates muted underneath */
+.archive h2 + p {
+  > strong:first-child {
+    display: block;
+    font-size: 1.05em;
+  }
+
+  > em {
+    color: $olive-muted;
+    font-style: normal;
+    font-size: 0.9em;
+  }
+}
+
+/* Homepage: project cards and news list
+   ========================================================================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1em;
+  margin-bottom: 1.3em;
+}
+
+.page__content .project-card {
+  padding: 1em 1.2em;
+  background: $sand-dark;
+  border-radius: 12px;
+
+  p {
+    margin: 0 0 0.4em;
+  }
+
+  .project-meta {
+    color: $olive-muted;
+    font-size: $type-size-6;
+  }
+
+  .project-title {
+    font-family: $header-font-family;
+    font-size: 1.1em;
+    line-height: 1.35;
+  }
+
+  .project-desc {
+    font-size: 0.9em;
+  }
+
+  .project-links {
+    margin: 0;
+    font-size: 0.85em;
+
+    a + a {
+      margin-left: 1em;
+    }
+  }
+}
+
+.page__content .news-list {
+  margin: 0 0 1.3em;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    gap: 1.2em;
+    margin-bottom: 0.6em;
+  }
+
+  .news-date {
+    flex: 0 0 5.5em;
+    color: $olive-muted;
+  }
+}
+
+/* Top navigation: olive bar with light links
+   ========================================================================== */
+
+.masthead {
+  background: $olive;
+  border-bottom: 0;
+}
+
+.masthead__inner-wrap {
+  padding: 0.9em 1em;
+}
+
+.masthead__menu-item--lg a {
+  color: $sand;
+  font-family: $header-font-family;
+  font-size: 1.15em;
+}
+
+.greedy-nav {
+  background: transparent;
+
+  .visible-links li:first-child {
+    font-weight: 400;
+  }
+
+  .visible-links a:before {
+    height: 2px;
+    background: $sand;
+  }
+
+  button {
+    background-color: mix(#000, $olive, 20%);
+    border-radius: $border-radius;
+  }
+
+  .hidden-links {
+    background: $background-color;
+
+    &:after {
+      border-color: $background-color transparent;
+    }
+
+    a {
+      color: $olive-ink;
+
+      &:hover {
+        color: $olive;
+        background: $sand-dark;
+      }
+    }
+  }
+}
+
+/* Sidebar / author profile
+   ========================================================================== */
+
+.author__avatar img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: 50%;
+
+  @include breakpoint($large) {
+    padding: 0;
+    border: 4px solid $sand-dark;
+  }
+}
+
+.sidebar .author__name {
+  font-family: $header-font-family;
+  font-size: $type-size-4;
+  font-weight: 400;
+}
+
+.author__bio {
+  color: $olive-muted;
+}
+
+.author__urls {
+  background: $background-color;
+
+  &:after {
+    border-color: $background-color transparent;
+  }
+
+  a {
+    color: $olive-ink;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+
+  i {
+    color: $primary-color;
+  }
+}
+
+/* Footer
+   ========================================================================== */
+
+.page__footer {
+  color: $olive-muted;
+  background-color: $sand-dark;
+  border-top: 1px solid $border-color;
+
+  .fas,
+  .fab,
+  .far,
+  .fal {
+    color: $olive-muted;
+  }
+}

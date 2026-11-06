@@ -1,0 +1,13 @@
+# News items on the homepage, newest first.
+# "text" can include markdown links, e.g. [Laelaps AI](/experience/)
+- date: "Jul 2026"
+  text: "Wrapped up as Computer Vision Engineer at [Laelaps AI](/experience/)."
+
+- date: "Feb 2026"
+  text: "Joined Laelaps AI in Zurich to build the perception stack for legged robots."
+
+- date: "Sep 2025"
+  text: "Completed my MSc thesis on [representation learning for collective intelligence](/research/) at Imperial College London."
+
+- date: "2023"
+  text: "Graduated magna cum laude with a BSE in Electrical Engineering from the University of Michigan."

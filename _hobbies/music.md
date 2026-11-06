@@ -2,6 +2,10 @@
 title: "Music"
 excerpt: "Clics Modernos is the greatest new wave album."
 collection: hobbies
+permalink: /music/
+redirect_from:
+  - /hobbies/music/
+share: false
 header:
   teaser: mojofm.png
 ---

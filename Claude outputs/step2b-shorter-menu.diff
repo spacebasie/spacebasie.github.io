@@ -1,0 +1,33 @@
+diff --git a/_data/navigation.yml b/_data/navigation.yml
+index fba4c8c..2c0cf60 100644
+--- a/_data/navigation.yml
++++ b/_data/navigation.yml
+@@ -1,19 +1,17 @@
+-# main links links
++# main links
+ main:
+-  - title: "Publications"
+-    url: /publications/
+-
+   - title: "Research"
+     url: /research/
+ 
+-  - title: "Professional Experience"
++  - title: "Experience"
+     url: /experience/
+-        
+-  - title: "Project Portfolio"
++
++  - title: "Projects"
+     url: /portfolio/
+-    
+-  - title: "Hobbies"
+-    url: /hobbies/
+-    
++
+   - title: "Photography"
+     url: /photography/
++
++# Not in the menu, but the pages still exist:
++#   /publications/  (the paper is linked from the Research page)
++#   /hobbies/       (still under construction)

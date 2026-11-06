@@ -1,0 +1,307 @@
+diff --git a/_includes/head/custom.html b/_includes/head/custom.html
+index 2a0b1c2..2be1c5e 100644
+--- a/_includes/head/custom.html
++++ b/_includes/head/custom.html
+@@ -21,9 +21,14 @@
+ <meta name="msapplication-TileColor" content="#000000">
+ <meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
+ <meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
+-<meta name="theme-color" content="#ffffff">
++<meta name="theme-color" content="#F6F2E8">
+ <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+ 
++<!-- fonts: Inter (body) and Source Serif 4 (headings) -->
++<link rel="preconnect" href="https://fonts.googleapis.com">
++<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
++
+ <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+ <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+diff --git a/_sass/_custom.scss b/_sass/_custom.scss
+new file mode 100644
+index 0000000..e6f5f24
+--- /dev/null
++++ b/_sass/_custom.scss
+@@ -0,0 +1,193 @@
++/* ==========================================================================
++   CUSTOM: olive & sand look
++   Loaded last in assets/css/main.scss so these rules override the theme.
++   Colours and fonts live in _variables.scss.
++   ========================================================================== */
++
++/* Base
++   ========================================================================== */
++
++body {
++  background-color: $background-color;
++  line-height: 1.7;
++}
++
++::selection {
++  color: $olive-ink;
++  background: mix(#fff, $olive, 70%);
++}
++
++h1, h2, h3, h4, h5, h6 {
++  color: $olive-ink;
++  font-weight: 600;
++}
++
++.page__title {
++  font-size: $type-size-2;
++  line-height: 1.15;
++  margin-bottom: 0.6em;
++}
++
++/* Section headings: thin rule with a short olive accent bar */
++.page__content h2,
++.archive h2 {
++  position: relative;
++  margin-top: 2.2em;
++  padding-bottom: 0.4em;
++  font-size: $type-size-3;
++  border-bottom: 1px solid $border-color;
++
++  &::after {
++    content: "";
++    position: absolute;
++    left: 0;
++    bottom: -1px;
++    width: 3em;
++    height: 3px;
++    background: $primary-color;
++  }
++}
++
++/* Links: softer underline */
++.page__content a,
++.archive a {
++  text-decoration-thickness: 1px;
++  text-underline-offset: 3px;
++
++  &:hover {
++    color: $link-color-hover;
++  }
++}
++
++/* Lists: olive bullets, a little tighter */
++.page__content,
++.archive {
++  ul li {
++    margin-bottom: 0.35em;
++  }
++
++  li::marker {
++    color: $primary-color;
++  }
++}
++
++/* Experience / research / projects entries:
++   role on its own line, location and dates muted underneath */
++.archive h2 + p {
++  > strong:first-child {
++    display: block;
++    font-size: 1.05em;
++  }
++
++  > em {
++    color: $olive-muted;
++    font-style: normal;
++    font-size: 0.9em;
++  }
++}
++
++/* Top navigation
++   ========================================================================== */
++
++.masthead {
++  background: $background-color;
++  border-bottom: 1px solid $border-color;
++}
++
++.masthead__inner-wrap {
++  padding: 0.9em 1em;
++}
++
++.masthead__menu-item--lg a {
++  color: $olive-ink;
++  font-family: $header-font-family;
++  font-size: 1.15em;
++  font-weight: 600;
++}
++
++.greedy-nav {
++  background: transparent;
++
++  .visible-links a:before {
++    height: 2px;
++    background: $primary-color;
++  }
++
++  button {
++    border-radius: $border-radius;
++  }
++
++  .hidden-links {
++    background: $background-color;
++
++    &:after {
++      border-color: $background-color transparent;
++    }
++
++    a:hover {
++      background: $sand-dark;
++    }
++  }
++}
++
++/* Sidebar / author profile
++   ========================================================================== */
++
++.author__avatar img {
++  aspect-ratio: 1 / 1;
++  object-fit: cover;
++  object-position: 50% 35%;
++  border-radius: 50%;
++
++  @include breakpoint($large) {
++    padding: 0;
++    border: 4px solid $sand-dark;
++  }
++}
++
++.sidebar .author__name {
++  font-family: $header-font-family;
++  font-size: $type-size-4;
++  font-weight: 600;
++}
++
++.author__bio {
++  color: $olive-muted;
++}
++
++.author__urls {
++  background: $background-color;
++
++  &:after {
++    border-color: $background-color transparent;
++  }
++
++  a {
++    color: $olive-ink;
++
++    &:hover {
++      color: $primary-color;
++      text-decoration: none;
++    }
++  }
++
++  i {
++    color: $primary-color;
++  }
++}
++
++/* Footer
++   ========================================================================== */
++
++.page__footer {
++  color: $olive-muted;
++  background-color: $sand-dark;
++  border-top: 1px solid $border-color;
++
++  .fas,
++  .fab,
++  .far,
++  .fal {
++    color: $olive-muted;
++  }
++}
+diff --git a/_sass/_variables.scss b/_sass/_variables.scss
+index c584e78..64439dd 100644
+--- a/_sass/_variables.scss
++++ b/_sass/_variables.scss
+@@ -14,7 +14,8 @@ $indent-var                 : 1.3em;
+ 
+ /* system typefaces */
+ $serif                      : Georgia, Times, serif;
+-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
++$sans-serif                 : "Inter", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
++$serif-display              : "Source Serif 4", Georgia, serif; // headings (loaded in _includes/head/custom.html)
+ $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+ 
+ /* sans serif typefaces */
+@@ -29,7 +30,7 @@ $calisto                    : "Calisto MT", serif;
+ $garamond                   : Garamond, serif;
+ 
+ $global-font-family         : $sans-serif;
+-$header-font-family         : $sans-serif;
++$header-font-family         : $serif-display;
+ $caption-font-family        : $serif;
+ 
+ /* type scale */
+@@ -47,20 +48,27 @@ $type-size-8                : 0.625em;  // ~10px
+    Colors
+    ========================================================================== */
+ 
+-$gray                       : #7a8288;
++/* olive & sand palette */
++$sand                       : #F6F2E8; // page background
++$sand-dark                  : #EDE8DA; // cards, footer
++$olive                      : #566829; // accent and links
++$olive-ink                  : #2D3127; // body text
++$olive-muted                : #655F51; // secondary text
++
++$gray                       : $olive-muted;
+ $dark-gray                  : mix(#000, $gray, 40%);
+ $darker-gray                : mix(#000, $gray, 60%);
+ $light-gray                 : mix(#fff, $gray, 50%);
+ $lighter-gray               : mix(#fff, $gray, 90%);
+ 
+-$body-color                 : #fff;
+-$background-color           : #fff;
+-$code-background-color      : #fafafa;
++$body-color                 : $sand;
++$background-color           : $sand;
++$code-background-color      : $sand-dark;
+ $code-background-color-dark : $light-gray;
+-$text-color                 : $dark-gray;
+-$border-color               : $lighter-gray;
++$text-color                 : $olive-ink;
++$border-color               : #E2DCCB;
+ 
+-$primary-color              : #7a8288;
++$primary-color              : $olive;
+ $success-color              : #62c462;
+ $warning-color              : #f89406;
+ $danger-color               : #ee5f5b;
+@@ -90,11 +98,11 @@ $xing-color                 : #006567;
+ 
+ 
+ /* links */
+-$link-color                 : $info-color;
++$link-color                 : $olive;
+ $link-color-hover           : mix(#000, $link-color, 25%);
+-$link-color-visited         : mix(#fff, $link-color, 25%);
+-$masthead-link-color        : $primary-color;
+-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
++$link-color-visited         : $link-color;
++$masthead-link-color        : $olive-muted;
++$masthead-link-color-hover  : $olive;
+ 
+ 
+ /*
+diff --git a/assets/css/main.scss b/assets/css/main.scss
+index a9399e5..eb192aa 100644
+--- a/assets/css/main.scss
++++ b/assets/css/main.scss
+@@ -38,4 +38,6 @@
+ @import "vendor/font-awesome/solid";
+ @import "vendor/font-awesome/brands";
+ @import "vendor/magnific-popup/magnific-popup";
+-@import "print";
+\ No newline at end of file
++@import "print";
++
++@import "custom"; // olive & sand look, loaded last so it overrides the theme
+\ No newline at end of file
