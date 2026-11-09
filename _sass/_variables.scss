@@ -12,13 +12,13 @@ $doc-font-size              : 16;
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
-/* site typeface: American Typewriter (built into Apple devices);
-   other devices get Cutive, a similar face loaded from Google Fonts in _includes/head/custom.html */
-$typewriter                 : "American Typewriter", "Courier New", serif;
+/* site typeface: Inter, loaded from Google Fonts in _includes/head/custom.html.
+   To try another font, change this one line (e.g. "American Typewriter", "Courier New", serif) */
+$site-font                  : "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : $typewriter; // the theme uses $sans-serif for nearly all text, so this switches the whole site
+$sans-serif                 : $site-font; // the theme uses $sans-serif for nearly all text, so this switches the whole site
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
@@ -33,8 +33,8 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $typewriter;
-$caption-font-family        : $typewriter;
+$header-font-family         : $site-font;
+$caption-font-family        : $site-font;
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px

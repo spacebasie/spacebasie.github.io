@@ -86,67 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Homepage: project cards and news list
-   ========================================================================== */
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1em;
-  margin-bottom: 1.3em;
-}
-
-.page__content .project-card {
-  padding: 1em 1.2em;
-  background: $sand-dark;
-  border-radius: 12px;
-
-  p {
-    margin: 0 0 0.4em;
-  }
-
-  .project-meta {
-    color: $olive-muted;
-    font-size: $type-size-6;
-  }
-
-  .project-title {
-    font-family: $header-font-family;
-    font-size: 1.1em;
-    line-height: 1.35;
-  }
-
-  .project-desc {
-    font-size: 0.9em;
-  }
-
-  .project-links {
-    margin: 0;
-    font-size: 0.85em;
-
-    a + a {
-      margin-left: 1em;
-    }
-  }
-}
-
-.page__content .news-list {
-  margin: 0 0 1.3em;
-  padding: 0;
-  list-style: none;
-
-  li {
-    display: flex;
-    gap: 1.2em;
-    margin-bottom: 0.6em;
-  }
-
-  .news-date {
-    flex: 0 0 5.5em;
-    color: $olive-muted;
-  }
-}
-
 /* Top navigation: olive bar with light links
    ========================================================================== */
 

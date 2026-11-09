@@ -32,27 +32,4 @@ I am currently seeking full-time opportunities in **machine learning, computer v
 * Autonomous robotics (cars/transportation)
 
 
-## Selected Projects
-<div class="project-grid">
-{%- for project in site.data.projects -%}
-  <div class="project-card">
-    <p class="project-meta">{{ project.meta }}</p>
-    <p class="project-title">{{ project.title }}</p>
-    <p class="project-desc">{{ project.desc }}</p>
-    {%- if project.links -%}
-    <p class="project-links">{%- for link in project.links -%}<a href="{{ link.url }}">{{ link.label }}</a>{%- endfor -%}</p>
-    {%- endif -%}
-  </div>
-{%- endfor -%}
-</div>
-
-More on the [projects page](/portfolio/).
-
-## News
-<ul class="news-list">
-{%- for item in site.data.news -%}
-  <li><span class="news-date">{{ item.date }}</span><span class="news-text">{{ item.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
-{%- endfor -%}
-</ul>
-
 War is over, if you want it.
